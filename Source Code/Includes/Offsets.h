@@ -1,11 +1,5 @@
-//
-// Created by harak on 2020-07-28.
-//
-
-#ifndef DARK_FORCE_OFFSETS_H
-#define DARK_FORCE_OFFSETS_H
-
-#endif //DARK_FORCE_OFFSETS_H
+#ifndef OFFSETS_H
+#define OFFSETS_H
 
 namespace Offsets {
     enum Offsets {
