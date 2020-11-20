@@ -1,12 +1,9 @@
-  
 #include <pthread.h>
 #include <jni.h>
 #include <memory.h>
 #include <dlfcn.h>
 #include <cstdio>
 #include <cstdlib>
-#include <Includes/Vector3.hpp>
-#include <Includes/Unity.h>
 #include <Includes/Utils.h>
 #include <string.h>
 #include <iostream>
@@ -397,7 +394,7 @@ JNIEXPORT void JNICALL Java_com_dark_force_NativeLibrary_init(JNIEnv * env, jcla
 
     //Add our toast in here so it wont be easy to change by simply editing the smali and cant
     //be cut out because this method is needed to start the hack (I'm smart)
-    jstring jstr = env->NewStringUTF("Mod Menu by Chewy"); //Edit this text to your desired toast message!
+    jstring jstr = env->NewStringUTF("Add Your Name"); //Edit this text to your desired toast message!
     jclass toast = env->FindClass("android/widget/Toast");
     jmethodID methodMakeText =
             env->GetStaticMethodID(
