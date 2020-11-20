@@ -1,11 +1,6 @@
-//
-// Created by harak on 2020-07-28.
-//
-
 #ifndef DARK_FORCE_STRINGS_H
 #define DARK_FORCE_STRINGS_H
 
-#endif //DARK_FORCE_STRINGS_H
 
 typedef struct _monoString {
     void *klass;
