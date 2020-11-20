@@ -1,9 +1,19 @@
+  
 #include <pthread.h>
 #include <jni.h>
 #include <memory.h>
 #include <dlfcn.h>
 #include <cstdio>
 #include <cstdlib>
+#include <Includes/Vector3.hpp>
+#include <Includes/Unity.h>
+#include <Includes/Utils.h>
+#include <string.h>
+#include <iostream>
+#include <sstream>
+#include <thread>
+#include <bits/sysconf.h>
+#include <sys/mman.h>
 
 #include "Includes/Logger.h"
 #include "Patching/Patch.h"
@@ -113,7 +123,7 @@ monoString* (*old_playername)(void *instance);
 monoString* playername(void *instance) {
     if(instance!=NULL) {
         if (isName) {
-            return CreateMonoString("Fucked By PolarMods :)");
+            return CreateMonoString("Add whatever you want hare");
         }
     }
     return old_playername(instance);
