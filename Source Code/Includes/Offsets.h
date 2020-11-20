@@ -1,6 +1,8 @@
 #ifndef OFFSETS_H
 #define OFFSETS_H
 
+#endif //DARK_FORCE_OFFSETS_H
+
 namespace Offsets {
     enum Offsets {
         SpeedHackDetector = 0xF60FB4, //SpeedHackDetector:private void Update
