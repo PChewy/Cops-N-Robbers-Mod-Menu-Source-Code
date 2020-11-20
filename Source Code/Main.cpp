@@ -160,7 +160,7 @@ float (*old_AccuracyPoint)(void *instance);
 float AccuracyPoint(void *instance) {
     if (instance != NULL) {
         if (IsAccuracy) {
-            return 0.0f;
+            return 999.0f;
         }
     }
     return old_AccuracyPoint(instance);
@@ -170,7 +170,7 @@ int (*old_AccuracyPointAdded)(void *instance);
 int AccuracyPointAdded(void *instance) {
     if (instance != NULL) {
         if (IsAccuracy2) {
-            return 0;
+            return 999;
         }
     }
     return old_AccuracyPointAdded(instance);
